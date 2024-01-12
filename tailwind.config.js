@@ -5,7 +5,7 @@ module.exports = {
     extend: {
       animation: {
         "green-swoosh":"green-swoosh 3s ease infinite",
-        "shifting-triangles":"shifting-triangles 3s ease infinite",
+        "shifting-triangles":"shifting-triangles 1s ease infinite",
         "rainbow-river":"rainbow-river 5s ease infinite"
       },
       keyframes: {
