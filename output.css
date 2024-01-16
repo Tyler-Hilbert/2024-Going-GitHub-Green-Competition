@@ -2993,6 +2993,10 @@ select {
   vertical-align: super;
 }
 
+.font-cursive {
+  font-family: Dancing Script, cursive;
+}
+
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
