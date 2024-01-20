@@ -88,6 +88,7 @@ module.exports = {
         "mystic-aura": "mystic-aura 2s ease infinite",
         "vibrant-sun": "vibrant-sun 2s ease infinite",
         "shifting-triangles": "shifting-triangles 2s ease infinite",
+        "wobble-shifting-triangles": "wobble-shifting-triangles 2s ease infinite",
 
         // MOVEMENTS
         "morphing-rectangle": "morphing-rectangle 2s ease infinite",
@@ -640,6 +641,32 @@ module.exports = {
               "linear-gradient(60deg, rgba(255, 0, 0, 0.8) 25%, rgba(0, 255, 0, 0.8) 50%, rgba(0, 0, 255, 0.8) 75%)",
             "background-size": "200% 200%",
             "background-position": "top left",
+          },
+        },
+
+        "wobble-shifting-triangles": {
+          "0%": {
+            "background-image":
+              "linear-gradient(60deg, rgba(255, 0, 0, 0.8) 25%, rgba(0, 255, 0, 0.8) 50%, rgba(0, 0, 255, 0.8) 75%)",
+            "background-size": "200% 200%",
+            "background-position": "top left",
+            "transform": "rotate(-5deg)",
+          },
+          "25%": { transform: "rotate(5deg)" },
+          "50%": {
+            "background-image":
+              "linear-gradient(60deg, rgba(0, 0, 255, 0.8) 25%, rgba(255, 0, 0, 0.8) 50%, rgba(0, 255, 0, 0.8) 75%)",
+            "background-size": "200% 200%",
+            "background-position": "bottom right",
+            "transform": "rotate(-5deg)"
+          },
+          "75%": { transform: "rotate(5deg)" },
+          "100%": {
+            "background-image":
+              "linear-gradient(60deg, rgba(255, 0, 0, 0.8) 25%, rgba(0, 255, 0, 0.8) 50%, rgba(0, 0, 255, 0.8) 75%)",
+            "background-size": "200% 200%",
+            "background-position": "top left",
+            "transform": "rotate(-5deg)",
           },
         },
 
