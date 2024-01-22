@@ -1108,10 +1108,6 @@ select {
   margin-bottom: 0.5rem;
 }
 
-.mb-6 {
-  margin-bottom: 1.5rem;
-}
-
 .ml-2 {
   margin-left: 0.5rem;
 }
@@ -1241,6 +1237,10 @@ select {
 
 .h-24 {
   height: 6rem;
+}
+
+.h-48 {
+  height: 12rem;
 }
 
 .h-96 {
@@ -1385,6 +1385,30 @@ select {
 
 .animate-amethyst-midnight {
   animation: amethyst-midnight 10s ease infinite;
+}
+
+@keyframes black-swoosh {
+  0% {
+    background-size: 600% 100%;
+    background-position: left center;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(64, 64, 64, 0.8), rgba(128, 128, 128, 0.8), rgba(0, 0, 0, 0.8), rgba(64, 64, 64, 0.8), rgba(128, 128, 128, 0.8), rgba(0, 0, 0, 0.8));
+  }
+
+  50% {
+    background-size: 600% 100%;
+    background-position: right center;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(64, 64, 64, 0.8), rgba(128, 128, 128, 0.8), rgba(0, 0, 0, 0.8), rgba(64, 64, 64, 0.8), rgba(128, 128, 128, 0.8), rgba(0, 0, 0, 0.8));
+  }
+
+  100% {
+    background-size: 600% 100%;
+    background-position: left center;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(64, 64, 64, 0.8), rgba(128, 128, 128, 0.8), rgba(0, 0, 0, 0.8), rgba(64, 64, 64, 0.8), rgba(128, 128, 128, 0.8), rgba(0, 0, 0, 0.8));
+  }
+}
+
+.animate-black-swoosh {
+  animation: black-swoosh 2s ease infinite;
 }
 
 @keyframes blue-galaxy {
@@ -4517,6 +4541,14 @@ select {
 
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .md\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .md\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
 
